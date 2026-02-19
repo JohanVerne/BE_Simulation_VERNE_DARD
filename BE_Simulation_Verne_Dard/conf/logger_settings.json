@@ -1,0 +1,34 @@
+{
+  "ClearAllBefore": false,
+  "levelsToRecord": ["Fatal", "Error", "Warning", "Information", "Detail"],
+  "classToFilter": [],
+  "loggerConfs": [
+    {
+      "activate": true,
+      "parametres": {
+        "LoggerKind": "enstabretagne.base.logger.loggerimpl.stdoutput.SortieTexteLogger"
+      },
+      "levelsToRecord": ["Fatal", "Error", "Warning", "Information"],
+      "classToFilter": []
+    },
+    {
+      "activate": true,
+      "parametres": {
+        "LoggerKind": "enstabretagne.base.logger.loggerimpl.csv.CSVDataLogger",
+        "DirectoryName": "resultats",
+        "FileName": "salon_coiffure"
+      },
+      "levelsToRecord": [
+        "Fatal",
+        "Error",
+        "Warning",
+        "Information",
+        "Detail",
+        "Data",
+        "DataSimple",
+        "DataRecordable"
+      ],
+      "classToFilter": []
+    }
+  ]
+}
